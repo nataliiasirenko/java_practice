@@ -372,16 +372,111 @@
 
 // --------------------
 
-function checkFruit(fruit) {
-  const fruits = [`apple`, `plum`, `pear`, `orange`];
+// function checkFruit(fruit) {
+//   const fruits = [`apple`, `plum`, `pear`, `orange`];
 
-  return fruits.includes(fruit);
-}
+//   return fruits.includes(fruit);
+// }
 
-console.log(checkFruit(`plum`));
-console.log(checkFruit(`mandarin`));
-console.log(checkFruit(`pear`));
-console.log(checkFruit(`Pear`));
-console.log(checkFruit(`apple`));
+// console.log(checkFruit(`plum`));
+// console.log(checkFruit(`mandarin`));
+// console.log(checkFruit(`pear`));
+// console.log(checkFruit(`Pear`));
+// console.log(checkFruit(`apple`));
 
 // --------------------
+
+
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   let arrayCommon = [];
+//   for (let i = 0; i < array1.length; i += 1) {
+//     if (array2.includes(array1[i])) {
+//       arrayCommon.push(array1[i]);
+//     }
+ 
+//   }
+
+// return arrayCommon;
+//  // Change code above this line
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+
+
+// --------------------
+
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   for ( const price of order) {
+//     total += price;
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+// --------------------
+
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   for (number of numbers) {
+
+
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+// --------------------
+
+
+// function getEvenNumbers(start, end) {
+//    // Change code below this line
+// const array = [];
+//   for (let i = start; i <= end; i += 1){
+//     if (i % 2 === 0){
+//       array.push(i);
+//     }
+//   }
+  
+// return array;
+
+//     // Change code above this line
+//   }
+
+// console.log(getEvenNumbers(2, 5));
+// console.log(getEvenNumbers(3, 11));
+// console.log(getEvenNumbers(6, 12));
+// console.log(getEvenNumbers(8, 8));
+// console.log(getEvenNumbers(7, 7));
+// console.log(getEvenNumbers());
+
+// --------------------
+
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+
+// --------------------
+
+//
+
