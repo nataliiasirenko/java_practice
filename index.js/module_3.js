@@ -247,5 +247,3 @@ const {
 const meanTemperature = (yesterday + today + tomorrow) / 3;
 
 // -------------
-
-const name =       "adam";
