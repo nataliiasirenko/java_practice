@@ -539,24 +539,44 @@
 
 //
 
+// function duplicateCount(text) {
+//   let inputArr = text.toLowerCase().split("");
+//   let resultObj = {};
+
+//   for (let i = 0; i < inputArr.length; i++) {
+//     resultObj.hasOwnProperty(inputArr[i])
+//       ? (resultObj[inputArr[i]].count += 1)
+//       : (resultObj[inputArr[i]] = { count: 1 });
+//   }
+
+//   let result = 0;
+
+//   for (let key in resultObj) {
+//     if (resultObj[key].count > 1) {
+//       result += 1;
+//     }
+//   }
+
+//   return result;
+// }
+// console.log(duplicateCount("ii77"));
+
 function duplicateCount(text) {
-  let inputArr = text.toLowerCase().split("");
-  let resultObj = {};
+  const tracker = {};
+  const dupes = [];
 
-  for (let i = 0; i < inputArr.length; i++) {
-    resultObj.hasOwnProperty(inputArr[i])
-      ? (resultObj[inputArr[i]].count += 1)
-      : (resultObj[inputArr[i]] = { count: 1 });
-  }
-
-  let result = 0;
-
-  for (let key in resultObj) {
-    if (resultObj[key].count > 1) {
-      result += 1;
+  for (const char of text.toLowerCase()) {
+    if (tracker.hasOwnProperty(char)) {
+      tracker[char]++;
+    } else {
+      tracker[char] = 1;
     }
   }
 
-  return result;
+  for (const prop in tracker) {
+    if (tracker[prop] > 1) dupes.push(prop);
+  }
+
+  return dupes.length;
 }
-console.log(duplicateCount("ii77"));
+console.log(duplicateCount(gthtyhut));
