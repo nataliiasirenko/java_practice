@@ -60,7 +60,6 @@
 
 //   const totalPrice = (orderedQuantity * pricePerItem);
 
-  
 //   return totalPrice;
 // };
 
@@ -77,7 +76,6 @@
 //  const totalPrice = (orderedQuantity * pricePerDroid + deliveryFee)
 // const message =`You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
 
-
 //
 //   return message;
 // }
@@ -91,7 +89,6 @@
 
 //     const passed = age >= 18;
 
- 
 //   return passed;
 // }
 // console.log(isAdult(20));
@@ -103,10 +100,9 @@
 
 // function isValidPassword(password) {
 //   const SAVED_PASSWORD = 'jqueryismyjam';
-  
+
 //   const isMatch = password === 'jqueryismyjam';
 
-  
 //   return isMatch;
 // }
 // console.log(isValidPassword("mangodab3st"));
@@ -123,7 +119,7 @@
 //   else {
 //     message = `Order is processed, our manager will contact you.`;
 //   }
-  
+
 //   return message;
 // }
 // console.log(checkStorage(100, 50));
@@ -145,7 +141,7 @@
 //   }
 //   else {
 //      message =`You ordered ${orderedQuantity} droids, you have ${customerCreditsLeft} credits left`;
-   
+
 //   }
 //   // Change code above this line
 //   return message;
@@ -176,7 +172,6 @@
 // console.log(checkPassword(null));
 // console.log(checkPassword("polyhax"));
 // console.log(checkPassword("jqueryismyjam"));
-
 
 // --------------------------
 
@@ -235,7 +230,7 @@
 //   const SILVER_DISCOUNT = 0.05;
 //   const GOLD_DISCOUNT = 0.1;
 //   let discount;
-    
+
 //   // Change code below this line
 //  if(totalSpent >= 50000){
 //   discount = GOLD_DISCOUNT;
@@ -244,8 +239,7 @@
 //  } else if (totalSpent >= 5000){
 //    discount = BRONZE_DISCOUNT;
 //  }else {discount = BASE_DISCOUNT;}
-   
-   
+
 //   // Change code above this line
 //   return discount;
 // }
@@ -290,7 +284,6 @@
 
 // function getSubscriptionPrice(type) {
 //   let price;
-  
 
 //  switch (type) {
 //      case "starter":
@@ -306,7 +299,6 @@
 //       break;
 //   }
 
- 
 //   return price;
 // }
 // console.log(getSubscriptionPrice("professional"));
@@ -318,12 +310,12 @@
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = "jqueryismyjam";
 //   let message;
- 
+
 //   switch (password) {
 //     case null :
 //     message = "Canceled by user!";
 //     break;
-      
+
 //    case ADMIN_PASSWORD :
 //     message = "Welcome!";
 //       break;
@@ -342,26 +334,26 @@
 
 // function getShippingCost(country) {
 //     let message;
-    
+
 //   // Change code below this line
 //     switch (country) {
-    
+
 //     case `China`:
 //     message = "Shipping to China will cost 100 credits";
 //         break;
-    
+
 //     case `Chile` :
 //     message = "Shipping to Chile will cost 260 credits";
 //         break;
-    
+
 //     case `Australia`:
 //     message = "Shipping to Australia will cost 170 credits";
 //         break;
-    
+
 //     case `Jamaica`:
 //     message = "Shipping to Jamaica will cost 120 credits";
 //         break;
-    
+
 //     default :
 //     message = "Sorry, there is no delivery to your country";
 // }
@@ -388,7 +380,6 @@
 // console.log(getNameLength("Harambe"));
 // console.log(getNameLength("Billy"));
 // console.log(getNameLength("Joe"));
-
 
 // const courseTopic = "JavaScript essentials";
 // // Change code below this line
@@ -433,13 +424,13 @@
 
 // function formatMessage(message, maxLength) {
 //   let result;
-  
+
 // if (message.length < maxLength){
 //  result = message;
 // } else {
 //     result = message.slice(0, maxLength, "...");
 // }
-  
+
 //
 //   return result;
 // }
@@ -486,3 +477,86 @@
 // console.log(checkForSpam("[SPAM] How to earn fast money?"));
 
 //--------------
+
+// for (let i = 0; i <= 5; i += 1) {
+//   console.log(i);
+
+//   if (i === 3) {
+//     console.log("Знайшли число 3, перериваємо виконання циклу");
+//     break;
+//   }
+// }
+
+// console.log("Лог після циклу");
+
+// function checkForSpam(message) {
+//   let result;
+
+//   // Change code below this line
+//   if (message.toLowerCase().includes(`spam `) || `sale`) {
+//     result = true;
+//   } else {
+//     result = false;
+//   }
+//   // Change code above this line
+//   return result;
+// }
+
+// console.log(checkForSpam("Latest technology news"));
+
+// function duplicateEncode(word) {
+//   //create a var to hold string value that IGNORES case
+//   let string = word.toLowerCase();
+//   //create a var to hold the finished string to return after it's looped through
+//   let unique = "";
+//   //loop through all letters in string
+//   for (let i = 0; i < string.length; i += 1) {
+//     //check for any characters that repeat
+//     if (string.lastIndexOf(string[i]) === string.indexOf(string[i])) {
+//       //for each character that never dupes, place (
+//       unique += "(";
+//     }
+//     //for each character that IS a dupe, place )
+//     else unique += ")";
+//   }
+//   //return the full string value where '(' are non duped and all')' are duped
+//   return unique;
+// }
+// //test by printing this in the console
+// console.log(duplicateEncode("BaRaban"));
+
+// var uniqueInOrder = function (iterable) {
+//   let arr = [];
+
+//   for (let i = 0; i < iterable.length; i += 1) {
+//     if (iterable[i] !== iterable[i + 1]) {
+//       arr.push(iterable[i]);
+//     }
+//   }
+//   return arr;
+// };
+// console.log(uniqueInOrder("ddffhggh"));
+
+//
+
+function duplicateCount(text) {
+  let inputArr = text.toLowerCase().split("");
+  let resultObj = {};
+
+  for (let i = 0; i < inputArr.length; i++) {
+    resultObj.hasOwnProperty(inputArr[i])
+      ? (resultObj[inputArr[i]].count += 1)
+      : (resultObj[inputArr[i]] = { count: 1 });
+  }
+
+  let result = 0;
+
+  for (let key in resultObj) {
+    if (resultObj[key].count > 1) {
+      result += 1;
+    }
+  }
+
+  return result;
+}
+console.log(duplicateCount("ii77"));

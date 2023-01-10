@@ -1,10 +1,8 @@
-
-
 // function checkAge(age) {
 //     if (age >= 18) { // Change this line
 //         return "You are an adult";
 //     }
-   
+
 //         return "You are a minor"
 //     }
 
@@ -17,13 +15,12 @@
 
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = "jqueryismyjam";
-  
 
 //   if (password === ADMIN_PASSWORD) {
 //     return "Welcome!";
 //   }
 //   return "Access denied, wrong password!";
-  
+
 // }
 // console.log(checkPassword("mangohackzor"));
 // console.log(checkPassword("polyhax"));
@@ -32,7 +29,7 @@
 //  ---------------
 
 // function checkStorage(available, ordered) {
-  
+
 //   if (ordered === 0) {
 //       return "Your order is empty!";
 //   } else if (ordered > available) {
@@ -40,7 +37,6 @@
 //   }
 //       return "The order is accepted, our manager will contact you";
 //   }
-
 
 // console.log(checkStorage(100, 50));
 // console.log(checkStorage(100, 130));
@@ -92,9 +88,7 @@
 
 // console.log(lastElementIndex);
 
-
 // -----------------
-
 
 // const fruits = [`apple`, `peach`, `pear`, `banana`];
 
@@ -119,7 +113,6 @@
 
 // -----------------
 
-
 // function getExtremeElements(array) {
 //   // Change code below this line
 // let result;
@@ -136,7 +129,6 @@
 
 // -----------------
 
-
 // function splitMessage(message, delimiter) {
 //   let words;
 //   // Change code below this line
@@ -151,14 +143,13 @@
 
 // -----------------
 
-
 // function calculateEngravingPrice(message, pricePerWord) {
 //    // Change code below this line
 
 // const wordsInMessage = message.split(" ");
 // const messageLendth = wordsInMessage.length;
 // const totalPrice = messageLendth * pricePerWord ;
-  
+
 // return totalPrice;
 //    // Change code above this line
 // }
@@ -175,8 +166,6 @@
 //   string = array.join(delimiter);
 
 //   // Change code below this line
-
-
 
 //   // Change code above this line
 //   return string;
@@ -195,7 +184,6 @@
 //   const normalizedString = string.split(" ");
 //   const slugTitle = normalizedString.join("-");
 
-  
 //   // Change code above this line
 //   return slugTitle;
 // }
@@ -231,7 +219,7 @@
 // function makeArray(firstArray, secondArray, maxLength) {
 //     // Change the code below this line
 // const  newArray = firstArray.concat(secondArray);
-  
+
 // if(newArray.length > maxLength){
 //   newArray.length = maxLength;
 // }
@@ -252,7 +240,6 @@
 //   const newArray = firstArray.concat(secondArray);
 //   const newArrayLength = newArray.length;
 
-  
 //   if (newArrayLength >= maxLength) {
 //     return newArray.slice(0, maxLength);
 //     // Change code above this line
@@ -268,12 +255,11 @@
 
 // --------------------
 
-
 // function calculateTotal(number) {
 //  // Change code below this line
 // let total = 0;
 // let i = 0;
-  
+
 //   for (let i = 0; i <= number; i += 1) { // Change this line
 //  total += i;
 // }
@@ -281,7 +267,6 @@
 // }
 
 //   // Change code above this line
-
 
 // console.log(calculateTotal(1));
 // console.log(calculateTotal(3));
@@ -310,7 +295,6 @@
 //   // Change code above this line
 //   return total;
 
-  
 // }
 // console.log(calculateTotalPrice([12, 85, 37, 4]));
 // console.log(calculateTotalPrice([164, 48, 291]));
@@ -318,7 +302,6 @@
 // console.log(calculateTotalPrice([]));
 
 // --------------------
-
 
 // function findLongestWord(string) {
 //   // Change code below this line
@@ -362,8 +345,7 @@
 //     if ( numbers[i] > value)
 //       newArray.push(numbers[i]);
 //     }
-    
-  
+
 //   return newArray;
 
 //   // Change code above this line
@@ -386,7 +368,6 @@
 
 // --------------------
 
-
 // function getCommonElements(array1, array2) {
 //   // Change code below this line
 //   let arrayCommon = [];
@@ -394,7 +375,7 @@
 //     if (array2.includes(array1[i])) {
 //       arrayCommon.push(array1[i]);
 //     }
- 
+
 //   }
 
 // return arrayCommon;
@@ -402,9 +383,7 @@
 // }
 // console.log(getCommonElements([1, 2, 3], [2, 4]));
 
-
 // --------------------
-
 
 // function calculateTotalPrice(order) {
 //   let total = 0;
@@ -427,7 +406,6 @@
 
 //   for (number of numbers) {
 
-
 //     if (number > value) {
 //       filteredNumbers.push(number);
 //     }
@@ -440,7 +418,6 @@
 
 // --------------------
 
-
 // function getEvenNumbers(start, end) {
 //    // Change code below this line
 // const array = [];
@@ -449,7 +426,7 @@
 //       array.push(i);
 //     }
 //   }
-  
+
 // return array;
 
 //     // Change code above this line
@@ -475,8 +452,20 @@
 //   }
 // }
 
-
 // --------------------
 
 //
 
+function getCount(str) {
+  var vowelsCount = 0;
+  var vowels = ["a", "e", "i", "o", "u"];
+  for (var i = 0; i < str.length; i++) {
+    for (var j = 0; j < vowels.length; j++) {
+      if (str[i] === vowels[j]) {
+        vowelsCount++;
+      }
+    }
+  }
+
+  return vowelsCount;
+}
