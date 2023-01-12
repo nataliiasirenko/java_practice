@@ -579,4 +579,4 @@ function duplicateCount(text) {
 
   return dupes.length;
 }
-console.log(duplicateCount(gthtyhut));
+console.log(duplicateCount("ghyyyytttuuuuy"));
