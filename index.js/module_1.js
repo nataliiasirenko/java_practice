@@ -76,7 +76,6 @@
 //  const totalPrice = (orderedQuantity * pricePerDroid + deliveryFee)
 // const message =`You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
 
-//
 //   return message;
 // }
 // console.log(makeOrderMessage(2, 100, 50));
@@ -407,7 +406,7 @@
 // console.log(firstElement);
 // console.log(lastElement);
 
-//--------------
+// --------------
 
 // function getSubstring(string, length) {
 //   const substring =  string.slice(0, length); // Change this line
@@ -420,7 +419,7 @@
 // console.log(getSubstring("Hello world", 11));
 // console.log(getSubstring("Hello world", 0));
 
-//--------------
+// --------------
 
 // function formatMessage(message, maxLength) {
 //   let result;
@@ -431,7 +430,6 @@
 //     result = message.slice(0, maxLength, "...");
 // }
 
-//
 //   return result;
 // }
 // console.log(formatMessage("Curabitur ligula sapien", 16));
@@ -440,7 +438,7 @@
 // console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
 // console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
 
-//--------------
+// --------------
 
 // function formatMessage(message, maxLength) {
 //   let result;
@@ -458,14 +456,13 @@
 // console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
 // console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
 
-//--------------
+// --------------
 
 // function checkForSpam(message) {
 //   let result;
-//     let normalizeMessage = message.toLowerCase();
-//     result =
-//         normalizeMessage.includes(`spam`) ||
-//         normalizeMessage.includes(`sale`);
+//   let normalizeMessage = message.toLowerCase();
+//   result =
+//     normalizeMessage.includes(`spam`) || normalizeMessage.includes(`sale`);
 
 //   return result;
 // }
@@ -476,7 +473,7 @@
 // console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!"));
 // console.log(checkForSpam("[SPAM] How to earn fast money?"));
 
-//--------------
+// --------------
 
 // for (let i = 0; i <= 5; i += 1) {
 //   console.log(i);
@@ -537,8 +534,6 @@
 // };
 // console.log(uniqueInOrder("ddffhggh"));
 
-//
-
 // function duplicateCount(text) {
 //   let inputArr = text.toLowerCase().split("");
 //   let resultObj = {};
@@ -561,22 +556,122 @@
 // }
 // console.log(duplicateCount("ii77"));
 
-function duplicateCount(text) {
-  const tracker = {};
-  const dupes = [];
+// function duplicateCount(text) {
+//   const tracker = {};
+//   const dupes = [];
 
-  for (const char of text.toLowerCase()) {
-    if (tracker.hasOwnProperty(char)) {
-      tracker[char]++;
-    } else {
-      tracker[char] = 1;
-    }
-  }
+//   for (const char of text.toLowerCase()) {
+//     if (tracker.hasOwnProperty(char)) {
+//       tracker[char]++;
+//     } else {
+//       tracker[char] = 1;
+//     }
+//   }
 
-  for (const prop in tracker) {
-    if (tracker[prop] > 1) dupes.push(prop);
-  }
+//   for (const prop in tracker) {
+//     if (tracker[prop] > 1) dupes.push(prop);
+//   }
 
-  return dupes.length;
+//   return dupes.length;
+// }
+// console.log(duplicateCount("ghyyyytttuuuuy"));
+
+// function checkForSpam(message) {
+//   let result;
+//   const normalizedMessage = message.toLowerCase();
+//   // Change code below this line
+
+//   if (normalizedMessage.includes(`spam`) || `sale`) {
+//     result = true;
+//   } else {
+//     result = false;
+//   }
+//   // Change code above this line
+//   return result;
+// }
+// console.log(checkForSpam("Get best sale offers now"));
+// console.log(checkForSpam("Amazing SalE, only tonight!"));
+// console.log(checkForSpam("Latest technology news"));
+// console.log(checkForSpam("Get best sale offers now"));
+
+// let password = "";
+
+// do {
+//   password = prompt("Введіть пароль довший 4-х символів", "");
+// } while (password.length < 5);
+
+// console.log("Ввели пароль: ", password);
+
+// const target = 4;
+// let sum = 0;
+
+// for (let i = 0; i <= target; i += 1) {
+//   sum += i;
+// }
+
+// console.log(sum);
+
+// for (let i = 0; i <= 5; i += 1) {
+//   console.log(i);
+
+//   if (i === 3) {
+//     console.log("Знайшли число 3, перериваємо виконання циклу");
+//     break;
+//   }
+// }
+
+// console.log("Лог після циклу");
+
+// const number = 10;
+
+// for (let i = 0; i < number; i += 1) {
+//   if (i % 2 === 0) {
+//     continue;
+//   }
+
+//   console.log("Непарне i: ", i); // 1, 3, 5, 7, 9
+// }
+
+// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+//   // Change code below this line
+//   const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
+//   const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
+
+//   // Change code above this line
+//   return message;
+// }
+// console.log(makeOrderMessage(2, 100, 50));
+
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//   let message;
+//   // Change code below this line
+//   const totalPrice = pricePerDroid * orderedQuantity;
+//   const creditLeft = customerCredits - totalPrice;
+//   if (customerCredits >= totalPrice) {
+//     message = `"You ordered ${orderedQuantity} droids, you have ${creditLeft} credits left"`;
+//   } else {
+//     message = `Insufficient funds!`;
+//   }
+//   // Change code above this line
+//   return message;
+// }
+// console.log(makeTransaction(3000, 5, 23000));
+
+// function isNumberInRange(start, end, number) {
+//   const isInRange = number >= start && number <= end;
+
+//   return isInRange;
+// }
+// console.log(isNumberInRange(10, 30, 17));
+
+function isNumberNotInRange(start, end, number) {
+  const isInRange = number >= start && number <= end;
+  const isNotInRange = !isInRange; // Change this line
+
+  return isNotInRange;
 }
-console.log(duplicateCount("ghyyyytttuuuuy"));
+
+console.log(isNumberNotInRange(10, 30, 17));
+console.log(isNumberNotInRange(10, 30, 5));
+console.log(isNumberNotInRange(20, 50, 24));
+console.log(isNumberNotInRange(20, 50, 76));

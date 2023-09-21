@@ -454,18 +454,120 @@
 
 // --------------------
 
-//
+// //
 
-function getCount(str) {
-  var vowelsCount = 0;
-  var vowels = ["a", "e", "i", "o", "u"];
-  for (var i = 0; i < str.length; i++) {
-    for (var j = 0; j < vowels.length; j++) {
-      if (str[i] === vowels[j]) {
-        vowelsCount++;
-      }
-    }
-  }
+// function getCount(str) {
+//   var vowelsCount = 0;
+//   var vowels = ["a", "e", "i", "o", "u"];
+//   for (var i = 0; i < str.length; i++) {
+//     for (var j = 0; j < vowels.length; j++) {
+//       if (str[i] === vowels[j]) {
+//         vowelsCount++;
+//       }
+//     }
+//   }
 
-  return vowelsCount;
-}
+//   return vowelsCount;
+// }
+
+// / перебираємо масив
+
+// const clients = ["Mango", "Ajax", "Poly"];
+
+// for (let i = 0; i < clients.length; i += 1) {
+//   console.log(clients[i]);
+// }
+
+// Цикл for...of
+
+// const clients = ["Mango", "Ajax", "Poly"];
+
+// for (const client of clients) {
+//   console.log(client);
+// }
+
+// const string = "javascript";
+
+// for (const character of string) {
+//   console.log(character);
+// }
+
+// -----------------------------------------------
+// const clients = ["Mango", "Poly", "Ajax"];
+// const clientNameToFind = "Mango";
+// let message;
+
+// for (const client of clients) {
+//   // На кожній ітерації будемо перевіряти чи збігається елемент масиву з
+//   // іменем клієнта. Якщо збігається - записуємо в message повідомлення
+//   // про успіх і робимо break, щоб далі не шукати
+//   if (client === clientNameToFind) {
+//     message = "Клієнт з таким ім'ям є в базі даних!";
+//     break;
+//   }
+
+//   // Якщо вони не збігаються - записуємо в message повідомлення про відсутність імені
+//   message = "Клієнт з таким ім'ям відсутній в базі даних!";
+// }
+
+// console.log(message); // "Клієнт з таким ім'ям є в базі даних!"
+
+// --------------------------------------------------------
+
+// const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
+// const threshold = 15;
+
+// // Для чисел, менших ніж порогове значення, спрацьовує continue, виконання тіла
+// // припиняється і управління передається на наступну ітерацію.
+// for (let i = 0; i < numbers.length; i += 1) {
+//   if (numbers[i] < threshold) {
+//     continue;
+//   }
+
+//   console.log(`Число більше за ${threshold}: ${numbers[i]}`); // 18, 29, 34
+// }
+
+//  використання аргументів
+
+// function multiply() {
+//   let total = 1;
+
+//   for (const argument of arguments) {
+//     total *= argument;
+//   }
+
+//   return total;
+// }
+
+// console.log(multiply(1, 2, 3)); //  6
+// console.log(multiply(1, 2, 3, 4)); //  24
+// console.log(multiply(1, 2, 3, 4, 5));
+
+// Перетворення псеідомасиву в масив
+// function fn() {
+//   // Змінна args буде містити повноцінний масив
+//   const args = Array.from(arguments);
+// }
+
+// Використовуючи операцію ... (rest), вона дозволяє зібрати будь-яку
+// кількість елементів, у нашому випадку аргументів, в масив, і
+// зберегти його в змінну.
+
+// function fn(...args) {
+//   // Змінна args буде містити повноцінний масив
+// }
+// function sayHi() {
+//   console.log("Hello, this is my first function!");
+// }
+// sayHi();
+
+// function add(a, b, c) {
+//   const result = a + b + c;
+
+//   console.log(`Addition result equals ${result}`);
+//   // Change code above this line
+// }
+
+// add(15, 27, 10);
+// add(10, 20, 30);
+// add(5, 10, 15);
