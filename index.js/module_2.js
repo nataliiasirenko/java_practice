@@ -383,7 +383,19 @@
 // }
 // console.log(getCommonElements([1, 2, 3], [2, 4]));
 
-// --------------------
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   let newArray = [];
+//   for (const number of array1) {
+//     if (array2.includes(number)) {
+//       newArray.push(number);
+//     }
+//   }
+//   return newArray;
+//   // Change code above this line
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// // --------------------
 
 // function calculateTotalPrice(order) {
 //   let total = 0;
@@ -571,3 +583,76 @@
 // add(15, 27, 10);
 // add(10, 20, 30);
 // add(5, 10, 15);
+
+// function getExtremeElements(array) {
+//   // Change code below this line
+//   let result;
+//   let firstElement;
+//   let lastElement;
+//   firstElement = array[0];
+//   lastElement = array[array.length - 1];
+//   result = [firstElement, lastElement];
+//   return result;
+//   // Change code above this line
+// }
+
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const newArray = [];
+//   for (const number of numbers) {
+//     if (number > value) {
+//       newArray.push(number);
+//     }
+//   }
+//   return newArray;
+//   // Change code above this line
+// }
+
+//
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+//   if (fruits.includes(fruit)) {
+//     return true; // Change this line
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(checkFruit("plu"));
+
+// function includes(array, value) {
+//   // Change code below this line
+
+//   for (const item of array) {
+//     if (item === value) {
+//       return true;
+//     }
+//   }
+//   return false;
+//   // Change code above this line
+// }
+
+// console.log(
+//   includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter")
+// );
+
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+//   if (
+//     message.toLowerCase().includes(`spam`) ||
+//     message.toLowerCase().includes(`sale`)
+//   ) {
+//     result = true;
+//   } else {
+//     result = false;
+//   }
+//   // Change code above this line
+//   return result;
+// }
+
+// console.log(checkForSpam("Get best  offers now!"));
+
+//

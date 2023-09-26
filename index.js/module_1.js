@@ -664,14 +664,47 @@
 // }
 // console.log(isNumberInRange(10, 30, 17));
 
-function isNumberNotInRange(start, end, number) {
-  const isInRange = number >= start && number <= end;
-  const isNotInRange = !isInRange; // Change this line
+// function isNumberNotInRange(start, end, number) {
+//   const isInRange = number >= start && number <= end;
+//   const isNotInRange = !isInRange; // Change this line
 
-  return isNotInRange;
-}
+//   return isNotInRange;
+// }
 
-console.log(isNumberNotInRange(10, 30, 17));
-console.log(isNumberNotInRange(10, 30, 5));
-console.log(isNumberNotInRange(20, 50, 24));
-console.log(isNumberNotInRange(20, 50, 76));
+// console.log(isNumberNotInRange(10, 30, 17));
+// console.log(isNumberNotInRange(10, 30, 5));
+// console.log(isNumberNotInRange(20, 50, 24));
+// console.log(isNumberNotInRange(20, 50, 76));
+
+//
+// function checkStorage(available, ordered) {
+//   let message;
+//   // Change code below this line
+
+//   message =
+//     ordered > available
+//       ? `Not enough goods in stock!`
+//       : `The order is accepted, our manager will contact you`;
+//   // Change code above this line
+//   return message;
+// }
+
+// console.log(checkStorage(100, 100));
+
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+
+//   if (
+//     message.toLowerCase().includes(`spam`) ||
+//     message.toLowerCase().includes(`sale`)
+//   ) {
+//     result = true;
+//   } else {
+//     result = false;
+//   }
+
+//   // Change code above this line
+//   return result;
+// }
+// console.log(checkForSpam("Latest technology Spam news"));
