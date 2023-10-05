@@ -610,23 +610,348 @@
 
 // console.log(lastTag);
 
-const apartment = {
-  area: 60,
-  rooms: 3,
-  location: {
-    country: "Jamaica",
-    city: "Kingston",
-  },
-  imgUrl: "https://via.placeholder.com/640x480",
-  descr: "Spacious apartment in the city center",
-  rating: 4.7,
-  price: 5000,
-  tags: ["premium", "promoted", "top", "trusted"],
-  owner: {
-    name: "Henry Sibola",
-    phone: "982-126-1588",
-    email: "henry.carter@aptmail.com",
-  },
-};
+// const apartment = {
+//   area: 60,
+//   rooms: 3,
+//   location: {
+//     country: "Jamaica",
+//     city: "Kingston",
+//   },
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4.7,
+//   price: 5000,
+//   tags: ["premium", "promoted", "top", "trusted"],
+//   owner: {
+//     name: "Henry Sibola",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
 
-console.log(apartment.location.city);
+// console.log(apartment.location.city);
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = [];
+// const values = [];
+// // Change code below this line
+// for (const key in apartment) {
+//   keys.push(key);
+//   values.push(apartment[key]);
+// }
+// console.log(keys);
+// console.log(values);
+
+// function countProps(object) {
+//   let propCount = 0;
+//   // Change code below this line
+//   for (const key in object) {
+//     if (object.hasOwnProperty(key)) {
+//       propCount += 1;
+//     }
+//   }
+//   // Change code above this line
+//   return propCount;
+// }
+// console.log(countProps({ name: "Mango", age: 2 }));
+
+// function countProps(object) {
+//   // Change code below this line
+//   let propCount = 0;
+
+//   const keys = Object.keys(object);
+//   for (const key of keys) {
+//     propCount += 1;
+//   }
+
+//   return propCount;
+// }
+// console.log(countProps({ name: "Mango", age: 2 }));
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// // Change code below this line
+
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Change code below this line
+//   const values = Object.values(salaries);
+//   for (value of values) {
+//     totalSalary += value;
+//   }
+
+//   // Change code above this line
+//   return totalSalary;
+// }
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+
+// // Change code below this line
+// for (const { hex, rgb } of colors) {
+//   // console.log(hex, rgb);
+
+//   hexColors.push(hex);
+//   rgbColors.push(rgb);
+// }
+
+// console.log(hexColors);
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//   // Change code below this line
+//   for (const product of products) {
+//     if (product.name === productName) {
+//       return product.price;
+//     }
+//   }
+//   return null;
+// }
+// // Change code above this line
+
+// console.log(getProductPrice("Grip"));
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   newArray = [];
+//   for (const product of products) {
+//     if (product[propName]) {
+//       newArray.push(product[propName]);
+//     }
+//   }
+
+//   return newArray;
+//   // Change code above this line
+// }
+// console.log(getAllPropValues("name"));
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Change code below this line
+//   let total = 0;
+//   for (const { name, price, quantity } of products) {
+//     if (name === productName) {
+//       total = price * quantity;
+//     }
+//   }
+
+//   return total;
+//   // Change code above this line
+// }
+// console.log(calculateTotalPrice("Radar"));
+
+// Change code below this line
+// function calculateMeanTemperature(forecast) {
+//   const {
+//     today: { low: todayLow = 10, high: todayHigh = 20 },
+//     tomorrow: { low: tomorrowLow = 20, high: tomorrowHigh = 30 },
+//   } = forecast;
+
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+// console.log(
+//   calculateMeanTemperature({
+//     today: { low: 28, high: 32 },
+//     tomorrow: { low: 25, high: 29 },
+//   })
+// );
+
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [
+//   ...firstGroupScores,
+//   ...secondGroupScores,
+//   ...thirdGroupScores,
+// ];
+// const bestScore = Math.max(allScores);
+// const worstScore = Math.min(allScores);
+
+//
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+//   const newMakeTask = { completed, category, priority, ...data };
+//   console.log(newMakeTask);
+//   return newMakeTask;
+
+//   // Change code above this line
+// }
+// console.log(
+//   makeTask({
+//     category: "Homemade",
+//     priority: "Low",
+//     text: "Take out the trash",
+//   })
+// );
+
+// Change code below this line
+// function add(...args) {
+//   // Change code above this line
+// }
+// console.log(add(74, 11, 62, 46, 12, 36));
+
+// Change code below this line
+// function add(...args) {
+//   let total = 0;
+//   for (arg of args) {
+//     total += arg;
+//   }
+//   return total;
+
+//   // Change code above this line
+// }
+
+// //   multiply(1, 2);
+// //   multiply(1, 2, 3);
+// // multiply(1, 2, 3, 4);
+// console.log(add(15, 27));
+
+// Change code below this line
+// function addOverNum(number, ...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     if (arg > number) {
+//       total += arg;
+//     }
+//   }
+
+//   return total;
+//   // Change code above this line
+// }
+// console.log(addOverNum(50, 15, 27));
+
+// function findMatches(array, ...args) {
+//   const matches = []; // Don't change this line
+//   for (const ar of array) {
+//     if (args.includes(ar)) {
+//       matches.push(ar);
+//     }
+//   }
+//   // Change code above this line
+//   return matches;
+// }
+// console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//     updateBook(oldName, newName) {
+
+//     return `Updating book  ${oldName} to ${newName}`;
+//   },
+//   // Change code above this line
+// };
+// console.log(bookShelf.updateBook("Sands of dune", "Dune"));
+
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//     const indexofBook = this.books.indexOf(oldName);
+//     this.books.splice(indexofBook, 1, newName);
+
+//     // Change code above this line
+//   },
+// };
+// bookShelf.updateBook("Haze", "Dungeon chronicles");
+// console.log(bookShelf.books);
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   // Change code below this line
+
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     for (const potion of this.potions) {
+//       if (potion.name === newPotion.name) {
+//         return `Error! Potion ${newPotion.name} is already in your inventory!`;
+//       }
+//     }
+//     return this.potions.push(newPotion);
+//   },
+//   removePotion(potionName) {
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       if (potionName === this.potions[i].name) {
+//         this.potions.splice(i, 1);
+//       }
+//     }
+//   },
+//   updatePotionName(oldName, newName) {
+//     for (const potion of this.potions) {
+//       if (potion.name === oldName) {
+//         return (potion.name = newName);
+//       }
+//     }
+//   },
+//   // Change code above this line
+// };
+
+// // atTheOldToad.addPotion({ name: "Invisibility", price: 620 });
+// // atTheOldToad.addPotion({ name: "Power potion", price: 270 });
+// // atTheOldToad.addPotion({ name: "Dragon breath", price: 700 });
+// // atTheOldToad.addPotion({ name: "Stone skin", price: 240 });
+// // atTheOldToad.addPotion({ name: "Dragon breath", price: 700 });
+// // atTheOldToad.addPotion({ name: "Stone skin", price: 240 });
+// atTheOldToad.removePotion("Speed potion");
+// // console.log(atTheOldToad.removePotion("Speed potion"));
+// // atTheOldToad.updatePotionName("Dragon breath", "Polymorth");
+// console.log(atTheOldToad.getPotions());
